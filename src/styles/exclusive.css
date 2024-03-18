@@ -1,0 +1,261 @@
+.exclusiveContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #55204f;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.exclusiveWave {
+  position: absolute;
+  height: 200px;
+  left: 0;
+}
+
+.exclusiveContainer__title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: #ffcad4;
+  z-index: 5;
+}
+
+.exclusiveProducts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 34px;
+
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
+
+.exclusiveProduct {
+  width: 505px;
+  height: 300px;
+
+  background-color: #fefefe;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 2rem;
+  position: relative;
+  box-shadow: 0.5px 0.6px 0px rgba(0, 0, 0, 0.048),
+    1.1px 1.3px 0px rgba(0, 0, 0, 0.069), 2.1px 2.5px 0px rgba(0, 0, 0, 0.085),
+    3.8px 4.5px 0px rgba(0, 0, 0, 0.101), 7.1px 8.4px 0px #e4d5bd,
+    17px 20px 0px rgba(0, 0, 0, 0.17);
+
+  margin-bottom: 2rem;
+
+  z-index: 5;
+}
+
+.exclusiveProduct__title {
+  position: relative;
+  top: -1.5rem;
+
+  font-size: 1.2rem;
+
+  background-color: #ffcad4;
+  width: 246px;
+  height: 50px;
+
+  text-align: center;
+  padding: 0.4rem;
+
+  text-transform: uppercase;
+  font-weight: 500;
+
+  color: #55204f;
+
+  border: 5px solid #55204f;
+  border-radius: 2px;
+}
+
+.exclusiveProduct__description {
+  font-size: 0.9rem;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.exclusiveProduct__list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+
+  margin-top: 1rem;
+  font-size: 0.8rem;
+
+  color: #55204f;
+
+  position: absolute;
+  bottom: 2rem;
+}
+
+.exclusiveProduct__list li {
+  font-weight: 500;
+}
+
+.extendsExclusive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 34px;
+
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .exclusiveProducts {
+    gap: 34px;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .exclusiveContainer__title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .exclusiveWave {
+    height: 100px;
+  }
+
+  .exclusiveProduct__title {
+    font-size: 1rem;
+  }
+
+  .exclusiveProduct {
+    width: 300px;
+    height: 350px;
+
+    background-color: #fefefe;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0 2rem;
+    position: relative;
+    box-shadow: 0.5px 0.6px 0px rgba(0, 0, 0, 0.048),
+      1.1px 1.3px 0px rgba(0, 0, 0, 0.069), 2.1px 2.5px 0px rgba(0, 0, 0, 0.085),
+      3.8px 4.5px 0px rgba(0, 0, 0, 0.101), 7.1px 8.4px 0px #e4d5bd,
+      17px 20px 0px rgba(0, 0, 0, 0.17);
+
+    margin-bottom: 2rem;
+
+    z-index: 5;
+  }
+
+  .exclusiveProduct__description {
+    font-size: 0.8rem;
+  }
+
+  .exclusiveProduct__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 1rem;
+    font-size: 0.8rem;
+
+    color: #55204f;
+
+    position: absolute;
+    bottom: 2rem;
+
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .exclusiveProducts {
+    gap: 34px;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .exclusiveContainer__title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .exclusiveWave {
+    height: 100px;
+  }
+
+  .extendsExclusive {
+    padding: 0;
+  }
+
+  .exclusiveProduct__title {
+    font-size: 1rem;
+  }
+
+  .exclusiveProduct {
+    width: 290px;
+    height: 350px;
+
+    background-color: #fefefe;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0 2rem;
+    position: relative;
+    box-shadow: 0.5px 0.6px 0px rgba(0, 0, 0, 0.048),
+      1.1px 1.3px 0px rgba(0, 0, 0, 0.069), 2.1px 2.5px 0px rgba(0, 0, 0, 0.085),
+      3.8px 4.5px 0px rgba(0, 0, 0, 0.101), 7.1px 8.4px 0px #e4d5bd,
+      17px 20px 0px rgba(0, 0, 0, 0.17);
+
+    margin-bottom: 2rem;
+
+    z-index: 5;
+  }
+
+  .exclusiveProduct__description {
+    font-size: 0.8rem;
+  }
+
+  .exclusiveProduct__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 1rem;
+    font-size: 0.8rem;
+
+    color: #55204f;
+
+    position: absolute;
+    bottom: 2rem;
+
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+}

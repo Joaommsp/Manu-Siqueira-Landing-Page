@@ -1,72 +1,35 @@
 /* =================== PAGE 3 CONTACT ================== */
 
-.container__pageThree {
+.container__pageFour {
   width: 100%;
-  height: 100vh;
 
   display: flex;
 
   position: relative;
 
-  background-color: #f4f4f4;
+  background-color: #e4d5bd;
   overflow: hidden;
-}
 
-.contactBanner {
-  width: 40%;
-  height: 100%;
-  background-image: url(../assets/images/contact-banner.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.contactBanner__cover {
-  width: 100%;
-  height: 100%;
-  background-color: #00000090;
   padding: 2rem;
 }
 
-.logoFull {
-  width: 200px;
-}
-
-.contactDestac__image {
-  width: 500px;
-  margin-right: 2rem;
+.logo-full-footer {
+  width: 356px;
 }
 
 .contactInfos {
-  position: absolute;
-  left: 16rem;
-  top: 50%;
-  transform: translateY(-50%);
-
+  width: 100%;
   display: flex;
-  overflow: hidden;
-  gap: 1.5rem;
 }
 
 .infos {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-}
+  justify-content: center;
 
-h5 {
-  color: var(--cor-secundaria);
-  font-family: "Figtree", sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-h6 {
-  font-size: 2.5rem;
-  font-family: "Figtree", sans-serif;
-  color: #571f50;
-  font-weight: 400;
+  gap: 56px;
 }
 
 .infos p {
@@ -74,13 +37,18 @@ h6 {
 }
 
 .infos__title {
-  margin: 2rem 0;
+  margin-bottom: 0rem;
+  color: #571f50;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .infosLinks {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 100%;
+  gap: 10px;
 }
 
 .contact_whatsapp {
@@ -95,9 +63,43 @@ h6 {
   color: var(--cor-branca);
 }
 
+.contact_email {
+  width: 310px;
+
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  background-color: #0078d4;
+  border-radius: 20px;
+  color: var(--cor-branca);
+}
+
+.contact_phone {
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  background-color: #55204f;
+  border-radius: 20px;
+  color: var(--cor-branca);
+}
+
 .contact_whatsapp img {
   margin-right: 0.5rem;
   width: 25px;
+}
+
+.contact_email img {
+  margin-right: 0.5rem;
+  width: 15px;
+}
+
+.contact_phone img {
+  margin-right: 0.5rem;
+  width: 20px;
 }
 
 .contact_maps {
@@ -122,9 +124,10 @@ h6 {
 }
 
 .adress__title {
-  font-size: 1.22rem;
+  font-size: 1.5rem;
   margin: 2rem 0 0.5rem 0;
   color: #571f50;
+  font-weight: 500;
 }
 
 .adress span {
@@ -132,307 +135,57 @@ h6 {
 }
 
 @media screen and (max-width: 600px) {
-  .container__pageThree {
-    width: 100%;
-    height: 120vh;
-
-    display: flex;
+  .container__pageFour {
     flex-direction: column;
-
-    padding: 2rem 0;
-
-    position: relative;
-
-    background-color: #f4f4f4;
-  }
-
-  .contactBanner {
-    display: none;
-    width: 100%;
-    height: 100%;
-  }
-
-  .contactBanner__cover {
-    padding: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .contactInfos {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .infos {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .infos__title {
-    margin: 1rem 0;
+  .logo-full-footer {
+    width: 256px;
   }
-
-  .infos p {
-    text-align: center;
-  }
-
-  .adress__title {
-    font-size: 1rem;
-    margin: 1rem 0 0.5rem 0;
-    color: #571f50;
-  }
-
-  .contactDestac__image {
-    width: 250px;
-    height: 250px;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-  }
-
-  h5 {
-    color: var(--cor-secundaria);
-    font-family: "Figtree", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-  }
-
-  h6 {
-    font-size: 1.5rem;
-    font-family: "Figtree", sans-serif;
-    color: #571f50;
-    font-weight: 400;
-
-    margin-bottom: 1rem;
-  }
-
-  .adress {
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-  }
-
-  .contact_whatsapp {
-  width: 200px;
-
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-
-  background-color: #42d26e;
-  border-radius: 20px;
-  color: var(--cor-branca);
-  z-index: 1000;
-}
-
-.contact_whatsapp img {
-  margin-right: 0.5rem;
-  width: 25px;
-}
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
-  .container__pageThree {
-    width: 100%;
-    height: 120vh;
-
-    display: flex;
-    justify-content: flex-end;
-
-    padding: 0rem 0;
-
-    position: relative;
-
-    background-color: #f4f4f4;
-  }
-
-  .contactBanner {
-    display: block;
-    width: 30%;
-    height: 100%;
-  }
-
-  .contactBanner__cover {
-    padding: 1rem;
+  .container__pageFour {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .contactInfos {
-    width: 70%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .infos {
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-  .infos__title {
-    margin: 1rem 0;
-  }
-
-  .infos p {
-    text-align: center;
-  }
-
-  .adress__title {
-    font-size: 1rem;
-    margin: 1rem 0 0.5rem 0;
-    color: #571f50;
-  }
-
-  .contactDestac__image {
-    width: 300px;
-    height: 300px;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-  }
-
-  h5 {
-    color: var(--cor-secundaria);
-    font-family: "Figtree", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-  }
-
-  h6 {
-    font-size: 1.5rem;
-    font-family: "Figtree", sans-serif;
-    color: #571f50;
-    font-weight: 400;
-
-    margin-bottom: 1rem;
-  }
-
-  .adress {
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
+  .logo-full-footer {
+    width: 256px;
+    display: none;
   }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1300px) {
-
-  .container__pageThree {
-    width: 100%;
-    height: 120vh;
-
-    display: flex;
-    justify-content: flex-start;
-
-    padding: 0rem 0;
-
-    position: relative;
-
-    background-color: #f4f4f4;
-  }
-
-  .contactBanner {
-    display: block;
-    width: 30%;
-    height: 100%;
-  }
-
-  .contactBanner__cover {
-    padding: 1rem;
-  }
-
-  .contactInfos {
-    width: 80%;
-    position: absolute;
-    left: 10rem;
-    top: 50%;
-    transform: translateY(-50%);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .infos {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .infos__title {
-    margin: 1rem 0;
-  }
-
-  .infos p {
-    text-align: center;
-  }
-
-  .adress__title {
-    font-size: 1rem;
-    margin: 1rem 0 0.5rem 0;
-    color: #571f50;
-  }
-
-  .contactDestac__image {
-    width: 450px;
-    height: 450px;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-  }
-
-  h5 {
-    color: var(--cor-secundaria);
-    font-family: "Figtree", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-  }
-
-  h6 {
-    font-size: 1.5rem;
-    font-family: "Figtree", sans-serif;
-    color: #571f50;
-    font-weight: 400;
-
-    margin-bottom: 1rem;
-  }
-
-  .adress {
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-  }
-
-
 }
-
-@media screen and (min-height: 700px) {
-  .contactDestac__image {
-    width: 350px;
-    height: 350px;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-  }
-} 
-
-@media screen and (min-height: 700px) and (min-width:700px){
-  .contactDestac__image {
-    width: 450px;
-    height: 450px;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-  }
-} 
