@@ -22,6 +22,7 @@
   justify-content: center;
 
   margin-bottom: 0rem;
+  overflow: hidden;
 }
 
 .container__pageTwo:before {
@@ -92,28 +93,25 @@
   width: 40%;
   height: 100%;
   position: relative;
-  background-color: #f1f1f1;
   z-index: 10;
 }
 
-.bigCardImage {
-  position: absolute;
-  bottom: 0;
-  left: -5rem;
-  width: 350px;
-  filter: drop-shadow(9px -7px 6px #0c0c0c73);
+.bigCard__imageContainer {
+  background-image: url(../assets/images/treatments/facial.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#bodyImage {
-  width: 200px;
-  left: 0;
+#cardBody {
+  background-image: url(../assets/images/treatments/corporal.jpg);
 }
 
 .bigCard__logo {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  width: 150px;
+  width: 100px;
 }
 
 .bigCard__Atribute {
@@ -126,7 +124,7 @@
 .mediumCard__container {
   width: 100%;
   background-color: #571f50;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 4rem 2rem;
 
   margin-bottom: 2rem;
 
@@ -135,6 +133,7 @@
 
 .mediumCard {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -149,12 +148,10 @@
 }
 
 .mediumCard__text {
-  width: 50%;
-  height: 100%;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -165,17 +162,31 @@
 }
 
 .mediumCard__list {
-  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
   color: #e9e9e9;
 }
 
-.mediumCard__atribute {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+.mediumCard__images {
+  width: 100%;
+  padding: 0 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 56px;
   z-index: 5;
-  color: #f1f1f1;
-  font-size: 0.6rem;
+}
+
+.mediumCard__images img {
+  width: 300px;
+  box-shadow: 0.5px 0.6px 0px rgba(0, 0, 0, 0.048),
+    1.1px 1.3px 0px rgba(0, 0, 0, 0.069), 2.1px 2.5px 0px rgba(0, 0, 0, 0.085),
+    3.8px 4.5px 0px rgba(0, 0, 0, 0.101), 7.1px 8.4px 0px #e4d5bd,
+    17px 20px 0px rgba(0, 0, 0, 0.17);
 }
 
 .viewService__Button {
@@ -380,22 +391,13 @@ h4 {
     z-index: 10;
   }
 
-  .bigCardImage {
-    position: absolute;
-    bottom: 0;
-    left: 0rem;
-    width: 250px;
-    filter: drop-shadow(9px -7px 6px #0c0c0c73);
-    z-index: 5;
-  }
-
   #bodyImage {
     width: 140px;
     left: 0;
   }
 
   .mediumCard__container {
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
   }
 
   .mediumCard {
@@ -491,20 +493,6 @@ h4 {
     z-index: 10;
   }
 
-  .bigCardImage {
-    position: absolute;
-    bottom: 0;
-    left: -2rem;
-    width: 250px;
-    filter: drop-shadow(9px -7px 6px #0c0c0c73);
-    z-index: 5;
-  }
-
-  #bodyImage {
-    width: 150px;
-    left: 0;
-  }
-
   .bigCard__logo {
     position: absolute;
     top: 1rem;
@@ -520,7 +508,7 @@ h4 {
   }
 
   .mediumCard__container {
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
   }
 
   .mediumCard {
@@ -544,11 +532,10 @@ h4 {
   }
 
   .mediumCard__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 2rem;
     text-align: center;
     color: #ffcad4;
   }

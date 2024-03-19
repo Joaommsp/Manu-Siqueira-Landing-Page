@@ -8,7 +8,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .aboutUs__imageContainer {
@@ -70,7 +70,7 @@
 
 .container__pageTwo_one {
   width: 100%;
-  height: 524px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -80,7 +80,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .aboutUs__text_one {
@@ -111,6 +111,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .images {

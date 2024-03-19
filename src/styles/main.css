@@ -108,8 +108,7 @@
 
 .banner {
   width: 100%;
-  height: 800px;
-  margin-bottom: 2rem;
+  height: 100%;
   background-color: var(--cor-branca);
 }
 
