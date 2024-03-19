@@ -73,7 +73,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 .bigCardTitle {
@@ -86,7 +85,8 @@
 
 .bigCardAbout {
   color: #f1f1f1;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  z-index: 10;
 }
 
 .bigCard__imageContainer {
@@ -381,6 +381,7 @@ h4 {
     color: #f1f1f1;
     margin-top: 1rem;
     text-align: center;
+    z-index: 10;
   }
 
   .bigCard__imageContainer {
@@ -467,8 +468,7 @@ h4 {
   .waveCard {
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 1;
+    left: 0;;
   }
 
   .bigCardTitle {
@@ -481,8 +481,9 @@ h4 {
 
   .bigCardAbout {
     color: #f1f1f1;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 0.8rem;
+    z-index: 10;
   }
 
   .bigCard__imageContainer {
@@ -497,7 +498,7 @@ h4 {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    width: 150px;
+    width: 100px;
   }
 
   .bigCard__Atribute {
