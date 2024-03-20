@@ -205,6 +205,9 @@
 #diasteseImage {
   width: 500px;
   margin-bottom: 2rem;
+  -webkit-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+  -moz-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+  box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
 }
 
 .viewService__Button {
