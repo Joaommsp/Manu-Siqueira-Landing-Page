@@ -114,8 +114,25 @@
   margin-bottom: 4rem;
 }
 
+.aboutUs__bigImageContainer_one {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.bigImages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  z-index: 5;
+}
+
 .images {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   z-index: 5;
 }
@@ -127,6 +144,15 @@
     3.8px 4.5px 0px rgba(0, 0, 0, 0.101), 7.1px 8.4px 0px #571f5095,
     17px 20px 0px rgba(0, 0, 0, 0.17);
 }
+
+.bigImage {
+  width: 350px;
+  box-shadow: 0.5px 0.6px 0px rgba(0, 0, 0, 0.048),
+    1.1px 1.3px 0px rgba(0, 0, 0, 0.069), 2.1px 2.5px 0px rgba(0, 0, 0, 0.085),
+    3.8px 4.5px 0px rgba(0, 0, 0, 0.101), 7.1px 8.4px 0px #571f5095,
+    17px 20px 0px rgba(0, 0, 0, 0.17);
+}
+
 
 @media screen and (max-width: 600px) {
   .container__pageTwo {
