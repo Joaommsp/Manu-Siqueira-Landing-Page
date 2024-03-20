@@ -134,6 +134,9 @@
 .mediumCardLight {
   background-color: transparent;
   margin-bottom: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mediumCard {
@@ -303,6 +306,10 @@ h4 {
 
   position: relative;
 }
+
+#diasteseTreatment {
+    height: 650px;
+  }
 
 .treatmentType {
   width: 100%;
@@ -474,6 +481,10 @@ h4 {
 
   #diasteseImage {
     width: 300px;
+  }
+
+  #diasteseTreatment {
+    height: 470px;
   }
 }
 
