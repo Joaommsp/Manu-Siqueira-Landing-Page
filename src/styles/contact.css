@@ -1,0 +1,189 @@
+/* =================== PAGE 3 CONTACT ================== */
+
+.container__pageFour {
+  width: 100%;
+
+  display: flex;
+
+  position: relative;
+
+  background-color: #e4d5bd;
+  overflow: hidden;
+
+  padding: 2rem;
+}
+
+.logo-full-footer {
+  width: 356px;
+}
+
+.contactInfos {
+  width: 100%;
+  display: flex;
+}
+
+.infos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 56px;
+}
+
+.infos p {
+  width: 80%;
+}
+
+.infos__title {
+  margin-bottom: 0rem;
+  color: #571f50;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.infosLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  gap: 10px;
+}
+
+.contact_whatsapp {
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  background-color: #42d26e;
+  border-radius: 20px;
+  color: var(--cor-branca);
+}
+
+.contact_email {
+  width: 310px;
+
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  background-color: #0078d4;
+  border-radius: 20px;
+  color: var(--cor-branca);
+}
+
+.contact_phone {
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  background-color: #55204f;
+  border-radius: 20px;
+  color: var(--cor-branca);
+}
+
+.contact_whatsapp img {
+  margin-right: 0.5rem;
+  width: 25px;
+}
+
+.contact_email img {
+  margin-right: 0.5rem;
+  width: 15px;
+}
+
+.contact_phone img {
+  margin-right: 0.5rem;
+  width: 20px;
+}
+
+.contact_maps {
+  width: 170px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.contact_maps img {
+  width: 128px;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.adress__title {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem 0;
+  color: #571f50;
+  font-weight: 500;
+}
+
+.adress span {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .container__pageFour {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactInfos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .infos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-full-footer {
+    width: 256px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .container__pageFour {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactInfos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .infos {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo-full-footer {
+    width: 256px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+}
