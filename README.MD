@@ -19,7 +19,7 @@
 
 <img src="./src/assets/images/logo-full.png" alt="logo">
 
-> Landing page que desenvolvi para uma freelancer, empresa de tratamento estético, a cliente solicitou uma página elegante, com cores chamativas e que mostrasse sobre ela e sua empresa, seus serviços e produtos, fazendo com que seus clientes se sentissem confortáveis ​​clicando nos links ligue para ação, contato direto via WhatsApp.
+> Landing page que desenvolvi para uma freelancer, empresa de tratamento estético, a cliente solicitou uma página elegante, com cores chamativas e que mostrasse sobre ela e sua empresa, seus serviços e produtos, fazendo com que seus clientes se sentissem confortáveis ​​clicando nos links call to action, com contato direto via WhatsApp.
 
 ## 💻 Um pouco do projeto
 
